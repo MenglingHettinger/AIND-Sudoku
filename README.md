@@ -3,11 +3,12 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: *Student should provide answer here*
+A: for naked twins problem, the constraint is that if n (n > 1) of the boxes in the unit have identical solutions with n digits, we need to remove these n digits from the rest of the boxes in the same unit. By eliminating these naked twin values from the possible values for the non-naked twin boxes in the same unit, we made our sudoku easier and faster to solve. On top of this, we also eliminated some of the impossible solutions from the non-naked-twin boxes, which can potentially lead to 
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: *Student should provide answer here*
+A: for the diagonal sodoku problem, we have to make sure that in addition to the constraints we have to a regular sudoku, the two main diagonals have to have 1 to 9 appear exactly once. To achieve this, I simply added two more constraints in the unitlist so all the code works accordingly when we loop over all the unit in the unitlist. 
+The two constraint lists are ['A1', 'B2', ....,'H8','I9'] and ['A9','B8', ...,'H2','I1'].
 
 ### Install
 
